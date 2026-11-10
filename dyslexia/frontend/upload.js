@@ -9,7 +9,8 @@ const statusMessage = document.getElementById("status");
 const dropArea = document.getElementById("dropArea");
 const welcome = document.getElementById("welcome");
  
-const API_URL = "http://127.0.0.1:8000/predict";
+// const API_URL = "http://127.0.0.1:8000/predict";
+const API_URL = "https://dyslexia-detection-through-handwriting.onrender.com/predict";
  
 let selectedFile = null;
  
