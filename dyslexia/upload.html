@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Handwriting - Dyslexia Detection</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <header>
+            <h2>Dyslexia Detection</h2>
+            <p id="welcome"></p>
+        </header>
+
+        <div class="content">
+
+            <div class="left-section">
+
+                <div class="illustration">
+                    <img src="uploadp.png" alt="Dyslexia illustration">
+                </div>
+
+                <h1 class="head1">Analyze Your Handwriting</h1>
+
+                <p class="head">
+                    Upload your handwriting image and let our
+                    AI-powered system analyze handwriting patterns
+                    using a Hybrid CNN + SVM approach.
+                </p>
+
+            </div>
+
+            <div class="right-section">
+
+                <div class="upload-card">
+
+                    <h2>Upload Handwriting Image</h2>
+
+                    <p class="description">
+                        Select an image from your device
+                    </p>
+
+                    <div class="upload-area" id="dropArea">
+
+                        <div class="upload-icon">☁️</div>
+
+                        <h3>Drag and drop your image here</h3>
+
+                        <p>or</p>
+
+                        <label for="fileInput" class="choose-btn">
+                            Choose Image
+                        </label>
+
+                        <input
+                            type="file"
+                            id="fileInput"
+                            accept=".jpg,.jpeg,.png,image/jpeg,image/png"
+                            hidden
+                        >
+
+                        <p class="formats">
+                            Supported formats: JPG, JPEG, PNG
+                        </p>
+
+                    </div>
+
+                    <div class="preview-section">
+
+                        <h3>Image Preview</h3>
+
+                        <img
+                            id="preview"
+                            src=""
+                            alt="Image preview"
+                            hidden
+                        >
+
+                        <p id="fileName"></p>
+
+                    </div>
+
+                    <button type="button" id="analyzeBtn" disabled>
+                        Analyze
+                    </button>
+
+                    <p id="status" role="status"></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="upload.js"></script>
+
+</body>
+</html>

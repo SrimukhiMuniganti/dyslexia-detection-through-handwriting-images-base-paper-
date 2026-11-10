@@ -1,0 +1,82 @@
+.loginpage{
+    height: 550px;
+    width:500px;
+
+}
+.imageblock{
+    margin-left: 180px;
+    margin-right: 1000px;
+    margin-top: 160px;
+    
+}
+.form-section {
+    margin-left:820px;
+    margin-top:-700px;
+    width:40%;
+    background: #e3edf9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:110px;
+    padding-bottom:110px;
+    border-radius: 30px;
+}
+
+/* Login card */
+.login-card {
+    background: rgb(255, 255, 255);
+    width:100%;
+    max-width: 380px;
+    padding: 60px 40px;
+    border-radius: 20px;
+}
+
+.login-card h2 {
+    text-align: center;
+    color: #121313;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #171616;
+    font-size: 12px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Input fields */
+.login-card label {
+    display: block;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.login-card input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #888;
+    padding: 10px 5px;
+    margin-bottom: 25px;
+    outline: none;
+    font-size: 14px;
+}
+
+.login-card input:focus {
+    border-bottom: 2px solid #2679dc;
+}
+
+/* Login button */
+.login-card button {
+    width: 100%;
+    padding:12px;
+    background: #1c69c7;
+    color: rgb(237, 235, 235);
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top:55px;
+}

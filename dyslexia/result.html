@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dyslexia Detection - Results</title>
+
+    
+    <link rel="stylesheet" href="result.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <h2>Dyslexia Detection</h2>
+
+            <p>AI Handwriting Screening</p>
+
+        </header>
+
+
+        <!-- Page heading -->
+        <section class="heading">
+
+            <h1>Screening Result</h1>
+
+            <p>
+                Here are the analysis results for your
+                uploaded handwriting sample.
+            </p>
+
+        </section>
+
+
+        <!-- Prediction and Confidence -->
+        <section class="result-section">
+
+            <div class="prediction-card">
+
+                <div class="result-icon" id="resultIcon">
+                    ✓
+                </div>
+
+                <div>
+                    <h3>Prediction</h3>
+
+                    <h1 id="prediction">--</h1>
+
+                    <p id="predictionMessage">
+                        Your analysis result will appear here.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="confidence-card">
+
+                <h3>Confidence Score</h3>
+
+                <div class="confidence-circle">
+
+                    <span id="confidence">--%</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Uploaded Image -->
+        <section class="image-section">
+
+            <div class="uploaded-image">
+
+                <h2>Uploaded Image</h2>
+
+                <div class="image-box">
+
+                    <img id="resultImage"
+                         src=""
+                         alt="Uploaded handwriting image">
+
+                </div>
+
+                <p id="imageName"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Information Message -->
+        <section class="message-box">
+
+            <span>ⓘ</span>
+
+            <p id="analysisMessage">
+                The analysis message will appear here
+                based on the model's prediction.
+            </p>
+
+        </section>
+
+
+        <!-- Navigation Buttons -->
+        <section class="button-section">
+
+            <button id="anotherImage">
+                Analyze Another Image
+            </button>
+
+            <button id="backHome">
+                Back to Home
+            </button>
+
+        </section>
+
+
+        <!-- Disclaimer -->
+        <footer>
+            This AI-based screening tool does not
+            provide a clinical diagnosis.
+        </footer>
+
+    </div>
+
+    <script src="result.js"></script>
+
+</body>
+</html>
