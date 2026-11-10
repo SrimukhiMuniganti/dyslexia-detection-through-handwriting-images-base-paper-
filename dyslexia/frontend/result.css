@@ -1,0 +1,306 @@
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8fc;
+    color: #202b40;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+/* Main container */
+.main-container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.header h2 {
+    color: #246bc1;
+    font-size: 22px;
+}
+
+.header p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.heading h1 {
+    font-size: 32px;
+    color: #17213a;
+    margin-bottom: 12px;
+}
+
+.heading p {
+    color: #777;
+    font-size: 15px;
+}
+
+/* Prediction and confidence section */
+.result-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+/* Prediction card */
+.prediction-card {
+    flex: 2;
+    background: #e6f8ee;
+    border: 1px solid #c9efda;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.result-icon {
+    width: 75px;
+    height: 75px;
+    background: #16ad65;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    flex-shrink: 0;
+}
+
+.prediction-card h3 {
+    font-size: 18px;
+    color: #236443;
+    margin-bottom: 8px;
+}
+
+.prediction-card h1 {
+    font-size: 35px;
+    color: #12633b;
+    margin-bottom: 8px;
+}
+
+.prediction-card p {
+    color: #47745c;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Confidence card */
+.confidence-card {
+    flex: 1;
+    background: #f1f6fc;
+    border: 1px solid #e1eaf5;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.confidence-card h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #26344d;
+}
+
+/* Circular confidence indicator */
+.confidence-circle {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #2677d5 0% 92%,
+        #d7e5f5 92% 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.confidence-circle::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #f1f6fc;
+    border-radius: 50%;
+}
+
+.confidence-circle span {
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    color: #202b40;
+}
+
+/* Uploaded image */
+.image-section {
+    margin-bottom: 30px;
+}
+
+.uploaded-image h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #26344d;
+}
+
+.image-box {
+    width: 100%;
+    min-height: 220px;
+    border: 1px solid #e0e6ef;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafcff;
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+#imageName {
+    margin-top: 10px;
+    color: #777;
+    font-size: 13px;
+}
+
+/* Analysis message */
+.message-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #eaf3ff;
+    border: 1px solid #d7e8ff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.message-box span {
+    font-size: 25px;
+    color: #2677d5;
+}
+
+.message-box p {
+    color: #405879;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.button-section {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.button-section button {
+    width: 280px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Analyze another image */
+#anotherImage {
+    background: white;
+    border: 2px solid #2677d5;
+    color: #2677d5;
+}
+
+#anotherImage:hover {
+    background: #eaf3ff;
+}
+
+/* Back to home */
+#backHome {
+    background: #2677d5;
+    border: 2px solid #2677d5;
+    color: white;
+}
+
+#backHome:hover {
+    background: #155bb0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    padding-top: 15px;
+    border-top: 1px solid #eeeeee;
+}
+
+/* Mobile responsive */
+@media (max-width: 750px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .result-section {
+        flex-direction: column;
+    }
+
+    .prediction-card {
+        padding: 20px;
+    }
+
+    .button-section {
+        flex-direction: column;
+    }
+
+    .button-section button {
+        width: 100%;
+    }
+
+    .heading h1 {
+        font-size: 26px;
+    }
+}
